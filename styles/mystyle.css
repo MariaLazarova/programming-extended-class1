@@ -1,0 +1,76 @@
+html, body {
+	scroll-behavior: smooth;
+	font-family: 'Inconsolata', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.theme1 {
+	background-image: url("../images/sky.jpeg"); 
+
+}
+
+.theme2 {
+	background-image: url("../images/landscape1.jpg")!important;
+	background-repeat: : no-repeat;
+
+
+}
+
+
+.body-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+/*	border: 2px solid yellow;
+*/	color: #98ff98;
+	font-family: 'Merriweather', serif;
+
+}
+
+
+.logo {
+	text-align: center;
+/*	border: 1px solid red;
+*/}
+
+.clock-container {
+/*	border: 1px solid green;
+*/	text-align: center;
+	font-size: 50px;
+}
+
+.date {
+/*	border: 1px solid pink;
+*/	text-align: center;
+	font-size: 50px;
+
+}
+
+#birds {
+/*	border: 1px solid green;
+*/	position: fixed;
+	display: none;
+}
+
+#birds2 {
+	animation-name: slide;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-delay: 2s;
+}
+
+@keyframes slide {
+	from {transform: translateX(0);}
+	to {transform: translateX(400px); }
+}
+
+#btn {
+	z-index: 1;
+}
+
